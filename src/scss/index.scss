@@ -1,0 +1,70 @@
+@import './main.scss';
+.container {
+  @extend .text-base;
+  min-height: 100vh;
+  width: 100%;
+  font-size: val($size-base);
+  line-height: 1.8;
+  * {
+    @include addfix(0, 'box-sizing', 'border-box');
+  }
+}
+
+.login-body {
+  @extend .container, .flex-column, .bgc-primary, .justify-center;
+  background: url('../assets/image/icon_login.jpg') no-repeat left top;
+  background-size: cover;
+  @extend .padding-left-right-30;
+}
+
+.login-box {
+  max-width: unit(550);
+  width: 100%;
+  margin: auto;
+  @extend .padding-30, .radius-16, .border-placeholder;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-box {
+  @extend .justify-center, .flex-row, .align-center, .flex-wrap, .padding-20;
+
+  span {
+    @extend .text-whiter;
+  }
+}
+
+.menus-box {
+  width: unit(200);
+  %menu {
+    height: inherit;
+    line-height: inherit;
+    @extend .padding-top-bottom-15;
+  }
+  .is-active {
+    background-color: darken(getmap($colors, 'primary'), 20);
+  }
+  .el-sub-menu {
+    padding: 0;
+    .el-menu {
+      padding: 0;
+    }
+  }
+  .el-sub-menu,
+  .el-menu-item {
+    @extend %menu;
+    &:hover {
+      background-color: darken(getmap($colors, 'primary'), 20);
+      transition: all 1s;
+    }
+  }
+}
+
+.header-box {
+  border-width: 0;
+  border-bottom-width: unit(0.3);
+}
+
+.popover-width {
+  max-width: unit(22);
+}
