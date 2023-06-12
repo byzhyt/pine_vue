@@ -1,7 +1,6 @@
 import vue from '@vitejs/plugin-vue';
 // 自动导入组件
 import Components from 'unplugin-vue-components/vite';
-
 // 自动导入插件
 import AutoImport from 'unplugin-auto-import/vite';
 // UI框架按需加载

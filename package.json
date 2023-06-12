@@ -1,8 +1,14 @@
 {
-  "name": "bird_vue",
-  "private": true,
+  "name": "pine_vue",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "main": "dist/pine-vue.mjs",
+  "module": "dist/pine-vue.umd.js",
+  "files": [
+    "dist/*"
+  ],
+
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",

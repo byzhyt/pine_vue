@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite';
 import plugins from './plugin';
 import proxy from './proxy';
-import { fileURLToPath } from 'url';
+import { resolve } from 'path';
 export default defineConfig({
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': resolve(__dirname, './src')
     },
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', 'vue', 'scss']
   },
@@ -27,6 +27,16 @@ export default defineConfig({
     proxy
   },
   build: {
-    manifest: true
+    manifest: true,
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true
+      },
+      format: {
+        comments: true
+      }
+    }
   }
 });

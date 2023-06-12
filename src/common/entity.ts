@@ -189,7 +189,7 @@ export interface SublevelEntity {
   visible: boolean;
   multiple: boolean;
   request: string;
-  pattern://,
-  rreq: Array<LableValueEntity>;
+  pattern: RegExp;
+  rreq: any;
   control: Array<LableValueEntity>;
 }
