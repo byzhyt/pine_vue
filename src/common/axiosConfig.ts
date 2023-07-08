@@ -2,6 +2,7 @@ import router from '@/router';
 let tempLoading: any = null,
   configRequest: any = null;
 export const httpRequest: any = axios.create();
+
 // 请求前处理函数
 export const configRequestFunction = (config: any) => {
   if (config.once && !configRequest) {
