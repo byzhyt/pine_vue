@@ -6,6 +6,7 @@
     active-text-color="#ffffff"
     text-color="#ffffff"
     background-color="#409eff">
+    <slot></slot>
     <template v-for="(item, key) in items" :key="key">
       <pv-submenu v-if="item.children" :item="item"></pv-submenu>
       <el-menu-item v-if="!item.children" :index="item.path">

@@ -11,7 +11,7 @@
 }
 
 .login-body {
-  @extend .container, .flex-column, .bgc-primary, .justify-center;
+  @extend .container, .flex-col, .bgc-primary, .justify-center;
   background: url('../assets/image/icon_login.jpg') no-repeat left top;
   background-size: cover;
   @extend .padding-left-right-30;

@@ -1,5 +1,5 @@
 <template>
-  <section class="flex-column">
+  <section class="flex-col">
     <template v-for="(item, key) in pvlayout.options">
       <component
         :class="item.className"

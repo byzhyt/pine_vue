@@ -23,7 +23,7 @@ export default defineConfig({
   },
   server: {
     strictPort: true,
-    port: 1029,
+    port: 1030,
     proxy
   },
   build: {

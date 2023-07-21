@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-column">
+  <div class="flex-col">
     <pv-layout :option="option" v-model="props.option.data"></pv-layout>
   </div>
 </template>

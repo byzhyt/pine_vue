@@ -499,7 +499,7 @@ $color-opacity: 0.3; // 组件禁用态的透明度
 }
 
 // 垂直布局
-.flex-column {
+.flex-col {
   @include addfix(1, 'display', 'flex');
   @include addfix(0, 'flex-direction', 'column');
 }

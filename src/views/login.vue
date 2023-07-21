@@ -1,6 +1,6 @@
 <template>
   <section class="login-body">
-    <div class="flex flex-column justify-center">
+    <div class="flex flex-col justify-center">
       <pv-form
         v-model="loginForm"
         ref="loginForm"
